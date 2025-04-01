@@ -1,0 +1,31 @@
+<!-- click	Fires when an element is clicked
+dblclick	Fires when an element is double-clicked
+mousedown	Fires when a mouse button is pressed down
+mouseup	Fires when a mouse button is released
+mousemove	Fires when the mouse is moved over an element
+mouseenter	Fires when the mouse enters an element (does NOT bubble)
+mouseleave	Fires when the mouse leaves an element (does NOT bubble)
+mouseover	Fires when the mouse enters an element (bubbles)
+mouseout	Fires when the mouse leaves an element (bubbles)
+contextmenu	Fires when the right mouse button is clicked (context menu) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" onclick="console.log('clicked')">Hello</div>   <!-- inline event handling -->
+</body>
+<script>
+     document.getElementById("box").addEventListener("click",function(e){
+        console.log(e);
+     },false)   //by default false if not want to write false
+    //To read
+    //type,timestamp,defaultPrevented
+    //target,toElement,srcElement,currentTarget,
+    //clientX,clientY,screenX,screenY
+    //altkey,ctrlkey,shiftkey,keycode
+</script>
+</html>

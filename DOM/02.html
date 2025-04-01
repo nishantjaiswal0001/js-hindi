@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+    <div id="heading" style="text-align: center;">Header</div>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const nish=document.querySelector(".parent")
+    console.log(nish);
+    console.log(nish.children);
+    console.log(nish.children[1].innerHTML)
+    for(let i=0;i<nish.children.length;i++){
+        console.log(nish.children[i].innerHTML)
+    }
+    nish.children[1].style.color="orange"
+    console.log(nish.firstElementChild);
+    console.log(nish.lastElementChild);
+    const dayone=document.querySelector(".day");
+    //console.log(dayone)
+    //console.log(dayone.parentElement);
+    //console.log(dayone.nextElementSibling);
+    console.log("NODES: ",nish.childNodes);
+</script>
+</html>
